@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import "../src/components/Exercise4.1/style1.css";
+import "../src/components/Exercise4.1/style1.css";
 // import "../src/components/Exercise4.2/style2.css";
 // import "../src/components/Exercise6.1/style3.css";
 // import "../src/components/Exercise7.2/style4.css";
