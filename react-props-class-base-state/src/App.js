@@ -1,4 +1,5 @@
 import "./App.css";
+import React from "react";
 import Exercise4Part1 from "./components/Exercise4.1/Exercise4.1";
 // import Card from "./components/Exercise4.2/Card";
 // import Link from "./components/Exercise4.2/Link";
@@ -12,17 +13,17 @@ import Exercise4Part1 from "./components/Exercise4.1/Exercise4.1";
 
 function App() {
   // const ArrOfCards = () => {
-    // return [1, 2, 3].map((num) => (
-    //   <Card
-    //     image={faker.image.image()}
-    //     title={`${num} random title`}
-    //     description={`Random description ${num}`}
-    //     key={`${num}`}
-    //   >
-    //     <Link linkName="Share"></Link>
-    //     <Link linkName="Explore"></Link>
-    //   </Card>
-    // ));
+  //   return [1, 2, 3].map((num) => (
+  //     <Card
+  //       image={faker.image.image()}
+  //       title={`${num} random title`}
+  //       description={`Random description ${num}`}
+  //       key={`${num}`}
+  //     >
+  //       {/* <Link linkName="Share"></Link> */}
+  //       {/* <Link linkName="Explore"></Link> */}
+  //     </Card>
+  //   ));
   // };
   return (
     <div className="App">
@@ -31,7 +32,7 @@ function App() {
       {/* <Counter></Counter> */}
       {/* <HideAndSeek></HideAndSeek> */}
       {/* <Exercise7Part3></Exercise7Part3> */}
-    </div>
+     </div>
   );
 }
 
