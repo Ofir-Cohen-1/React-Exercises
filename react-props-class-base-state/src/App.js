@@ -8,8 +8,8 @@ import React from "react";
 // import Link from "./components/Exercise6.1/Link";
 // import faker from "faker";
 // import Counter from "./components/Exercise7.1/Counter";
-import HideAndSeek from "./components/Exercise7.2/HideAndSeek";
-// import Exercise7Part3 from "./components/Exercise7.3/Exercise7part3";
+// import HideAndSeek from "./components/Exercise7.2/HideAndSeek";
+import Exercise7Part3 from "./components/Exercise7.3/Exercise7part3";
 
 function App() {
   // const ArrOfCards = () => {
@@ -30,8 +30,8 @@ function App() {
       {/* <Exercise4Part1 textBtn1="Important" textBtn2="Not Important" /> */}
       {/* <div className="cardsContainer">{ArrOfCards()}</div> */}
       {/* <Counter></Counter> */}
-      <HideAndSeek></HideAndSeek>
-      {/* <Exercise7Part3></Exercise7Part3> */}
+      {/* <HideAndSeek></HideAndSeek> */}
+      <Exercise7Part3></Exercise7Part3>
     </div>
   );
 }
