@@ -1,11 +1,11 @@
 import "./App.css";
 import React from "react";
 // import Exercise4Part1 from "./components/Exercise4.1/Exercise4.1";
-import Card from "./components/Exercise4.2/Card";
-import Link from "./components/Exercise4.2/Link";
+// import Card from "./components/Exercise4.2/Card";
+// import Link from "./components/Exercise4.2/Link";
 
-// import Card from "./components/Exercise6.1/Card";
-// import Link from "./components/Exercise6.1/Link";
+import Card from "./components/Exercise6.1/Card";
+import Link from "./components/Exercise6.1/Link";
 import faker from "faker";
 // import Counter from "./components/Exercise7.1/Counter";
 // import HideAndSeek from "./components/Exercise7.2/HideAndSeek";
