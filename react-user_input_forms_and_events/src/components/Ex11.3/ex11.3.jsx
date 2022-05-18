@@ -1,0 +1,88 @@
+import React from "react";
+import "./ex11.3.css";
+import InputTag from "./InputTag";
+import SelectTag from "./SelectTag";
+import TextAreaTag from "./TextAreaTag";
+import Submit from "./Submit";
+import PageAfterPressSubmit from "./PageAfterPressSubmit";
+
+/**
+ * ?Components:
+ * * Input text tags - 2
+ * * Select tag - 1
+ * * Text area tag - 1
+ */
+
+export default class Ex11Part3 extends React.Component {
+  state = {
+    firstName: "",
+    lastName: "",
+    age: "",
+    freeText: "",
+    isSubmitPressed: false,
+  };
+
+  handleChangeInput1 = (e) => {
+    this.setState({ firstName: e.target.value });
+  };
+
+  handleChangeInput2 = (e) => {
+    this.setState({ lastName: e.target.value });
+  };
+
+  handleChangeSelected = (e) => {
+    this.setState({ age: e.target.value });
+  };
+
+  handleTextAreaChange = (e) => {
+    this.setState({ freeText: e.target.value });
+  };
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+    this.setState((_) => {
+      return { isSubmitPressed: true };
+    });
+  };
+
+  handleBack = () => {
+    this.setState((_) => {
+      return { isSubmitPressed: false };
+    });
+  };
+
+  render() {
+    return this.state.isSubmitPressed ? (
+      <PageAfterPressSubmit
+        firstName={this.state.firstName}
+        lastName={this.state.lastName}
+        age={this.state.age}
+        freeText={this.state.freeText}
+        clickedBack={this.handleBack}
+      ></PageAfterPressSubmit>
+    ) : (
+      <form className="ui form" onSubmit={this.handleSubmit}>
+        <InputTag
+          inputLabel="First Name: "
+          whenInputChange={this.handleChangeInput1}
+          inputValue={this.state.firstName}
+        ></InputTag>
+        <InputTag
+          inputLabel="Last Name: "
+          whenInputChange={this.handleChangeInput2}
+          inputValue={this.state.lastName}
+        ></InputTag>
+        <SelectTag
+          selectTagValue={this.state.age}
+          whenSelectTagChange={this.handleChangeSelected}
+        ></SelectTag>
+        <TextAreaTag
+          labelText="Free Text: "
+          textAreaValue={this.state.freeText}
+          whenTextAreaChange={this.handleTextAreaChange}
+        ></TextAreaTag>
+        <Submit></Submit>
+      </form>
+    );
+  }
+}
