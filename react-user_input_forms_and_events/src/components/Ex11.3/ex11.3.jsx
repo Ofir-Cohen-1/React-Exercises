@@ -12,7 +12,7 @@ import PageAfterPressSubmit from "./PageAfterPressSubmit";
  * * Select tag - 1
  * * Text area tag - 1
  */
-
+console.log(React);
 export default class Ex11Part3 extends React.Component {
   state = {
     firstName: "",
