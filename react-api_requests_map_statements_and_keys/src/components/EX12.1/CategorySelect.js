@@ -6,7 +6,7 @@ const CategorySelect = (props) => {
         </option>
       );
     });
-    console.log(categories);
+    // console.log(categories);
   
     return (
       <>

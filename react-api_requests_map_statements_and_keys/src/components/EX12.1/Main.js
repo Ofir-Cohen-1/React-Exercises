@@ -1,7 +1,7 @@
 import React from "react";
 import ActiveBtn from "./ActiveBtn";
 import Select from "./CategorySelect";
-import Chucknorris from "../api/Chucknorris";
+import Chucknorris from "./api/Chucknorris";
 
 class ChuckNorris extends React.Component {
   state = { categories: [], selectedCat: "all", currentJoke: "" };
