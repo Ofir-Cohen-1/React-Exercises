@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ProductData from "../store";
 
 class ProductDetail extends React.Component {
@@ -32,7 +32,7 @@ class ProductDetail extends React.Component {
       <div className="details">
         {this.getDetails()}
         <button>
-          <NavLink to={this.props.match.path.slice(0, index)}>Back</NavLink>
+          <Link to={this.props.match.path.slice(0, index)}>Back</Link>
         </button>
       </div>
     );

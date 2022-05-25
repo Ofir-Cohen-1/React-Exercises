@@ -15,7 +15,7 @@ class App extends React.Component {
         <div className="mainContainer">
           <Switch>
             <Route exact path="/" component={HomePage} />
-            <Route exact path="/Products" component={Products} />
+            <Route exact path="/products" component={Products} />
             <Route exact path="/Products/:id" component={ProductDetail} />
             <Route component={NotFound} />
           </Switch>
