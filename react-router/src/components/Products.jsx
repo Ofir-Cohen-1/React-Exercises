@@ -7,7 +7,7 @@ class Products extends Component {
   
   componentDidMount = () => {
     this.setState({ products: ProductsData });
-    // console.log(this);
+    console.log(this);
   };
   productTitles = () => {
     return this.state.products.map((item) => {
