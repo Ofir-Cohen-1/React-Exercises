@@ -4,8 +4,9 @@ function App() {
   const [seconds, setSeconds] = useState(0);
   const [minutes, setMinuts] = useState(0);
   const [hours, setHours] = useState(0);
-
+  
   const handleSeconds = ({ target: { value } }) => {
+    console.log( value );
     setSeconds(value);
     setMinuts(value / 60);
     setHours(value / 3600);
@@ -20,7 +21,7 @@ function App() {
     setMinuts(value * 60);
     setHours(value);
   };
-
+  
   return (
     <>
     <div>
